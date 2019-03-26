@@ -1,7 +1,11 @@
-# Bookie Experimental
+# Bookie-Experimental
 A personal look-ahead fork of Bookie. Includes beta functionality and bugfixes that may have not made it onto the main repository.
 
-Created for test purposes.
+Created for test purposes. May have stability issues.
+
+## Current Bookie-E Differences
+Clone this repo and do the following:
+- [x] Sportsbook
 
 ## Install and Run
 Clone this repo and do the following:
