@@ -38,7 +38,7 @@ class BackingBettingWidget extends PureComponent {
     let eventTime;
 
     // If the following if statement is true, then the component is an event
-    if (this.props.eventTime) {
+    if (this.props.eventTime && !this.props.eventRoute) {
       eventFlag = true;
       const localDate = moment.utc(this.props.eventTime).local();
 
@@ -52,7 +52,7 @@ class BackingBettingWidget extends PureComponent {
         (SportsbookUtils.isAbleToBet(this.props.eventStatus) ? 'active ' : 'disabled ') }>
         <div>
 
-          { eventFlag && 
+          { eventFlag &&
             <Col span={ 10 }>
               <Col className='date' span={ 5 }>
                 <span className='dateString'>
@@ -82,6 +82,10 @@ class BackingBettingWidget extends PureComponent {
               span = SportsbookUtils.getColumnSize(this.props.columnType, eventFlag);
             } else {
               span = SportsbookUtils.getColumnSize(title, eventFlag);
+              
+              if (bettingMarkets.length === 3) {
+                span = 8;
+              }
             }
 
             return (
@@ -93,6 +97,7 @@ class BackingBettingWidget extends PureComponent {
                   title={ description }
                   eventName={ this.props.title }
                   eventID={ this.props.eventID }
+                  eventRoute={ this.props.eventRoute }
                   backOrigin={ item.get('backOrigin') }
                   bettingMarketId={ item.get('id') }
                   eventStatus={ this.props.eventStatus }
@@ -111,8 +116,6 @@ class BackingBettingWidget extends PureComponent {
 
 BackingBettingWidget.propTypes = {
   isLiveMarket: PropTypes.bool.isRequired,
-  eventStatus: PropTypes.any.isRequired,
-  title: PropTypes.string.isRequired
 };
 
 const mapDispatchToProps = (dispatch) => {

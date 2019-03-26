@@ -58,6 +58,19 @@
     height: @tileHeight;
     line-height: 1.2;
 
+    &.eventFlag {
+      display: flex;
+
+      .odds {
+        margin-top: 8px;
+        text-align: right;
+      }
+
+      .bmTitle {
+        margin-top: 8px;
+      }
+    }
+
     &.active:hover {
       background-color: @cello;
       cursor: pointer;
