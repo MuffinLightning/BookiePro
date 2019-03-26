@@ -1,5 +1,7 @@
-# Bookie
-Desktop betting exchange application for the PeerPlays blockchain
+# Bookie Experimental
+A personal look-ahead fork of Bookie. Includes beta functionality and bugfixes that may have not made it onto the develop branch.
+
+Created for test purposes.
 
 ## Install and Run
 Clone this repo and do the following:
@@ -16,14 +18,3 @@ $ npm run build
 ```
 
 The application will be opened as a web app (in a browser instance) and an Electron app.
-
-## Technology Stack
-- React
-- Electron (wrapping into desktop app)
-- Redux (single source of truth state management)
-- React-Router (we use this to control navigation)
-- React-Router-Redux (sync React-Router with Redux so we can handle navigation with Redux)
-- Ant-Design (CSS/UI library)
-- Redux dev tools (allow user to debug )
-- ESlint (to ensure code style consistency)
-- LESS (CSS preprocessor)
