@@ -1,5 +1,5 @@
 # Bookie Experimental
-A personal look-ahead fork of Bookie. Includes beta functionality and bugfixes that may have not made it onto the develop branch.
+A personal look-ahead fork of Bookie. Includes beta functionality and bugfixes that may have not made it onto the main repository.
 
 Created for test purposes.
 
