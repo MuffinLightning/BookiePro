@@ -4,7 +4,6 @@ A personal look-ahead fork of Bookie. Includes beta functionality and bugfixes t
 Created for test purposes. May have stability issues.
 
 ## Current Bookie-E Differences
-Clone this repo and do the following:
 - [x] Sportsbook
 
 ## Install and Run
